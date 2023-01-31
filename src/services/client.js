@@ -1,12 +1,15 @@
-import { createClient } from '@supabase/supabase-js';
-export const client = createClient(
-  process.env.REACT_APP_SUPABASE_URL,
-  process.env.REACT_APP_SUPABASE_KEY
-);
+import React from 'react';
+import ReactDOM from 'react-dom';
 
-export function checkError({ data, error }) {
-  if (error) {
-    throw error;
+class Main extends React.Component {
+  render() {
+    return (
+      <div>
+        <h1>Victory Tutorial</h1>
+      </div>
+    );
   }
-  return data;
 }
+
+const app = document.getElementById('app');
+ReactDOM.render(<Main />, app);

@@ -4,4 +4,10 @@ nav {
 }
 a {
   margin: 5px;
+  font-size: 3rem;
+}
+
+.active {
+  color: aqua;
+  font-weight: bold;
 }
