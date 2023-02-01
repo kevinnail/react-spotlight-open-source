@@ -1,7 +1,7 @@
 import { NavLink, Route, Switch } from 'react-router-dom';
 import './App.css';
 import Charts from './components/Charts.js';
-import Table from './components/Table.js';
+import TableComponent from './components/TableComponent.js';
 
 function App() {
   return (
@@ -11,8 +11,8 @@ function App() {
         <NavLink to="/charts">Charts</NavLink>
       </nav>
       <Switch>
-        <Route path="/table" component={Table}></Route>
-        <Route path="/charts" component={Charts}></Route>
+        <Route path="/table" component={TableComponent} />
+        <Route path="/charts" component={Charts} />
       </Switch>
     </div>
   );
